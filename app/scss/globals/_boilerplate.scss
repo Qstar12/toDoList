@@ -1,0 +1,46 @@
+@use "../util"; 
+
+@mixin mq($size) {
+    @media only screen and (min-width: $size) {
+        @content;
+    }
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: util.$base;
+    height: 100vh;
+    background-color: var(--background-color);
+    font-family: util.$font;
+    color: var(--text-color);
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+    @include mq(768px){
+        font-size: 22px;
+    }
+}
+
+section {
+    background-color: var(--sec-background-color);
+    width: 90%;
+    max-width: 700px;
+    margin: 0 auto;
+    border: 1px solid var(--container-border);
+    border-radius: 10px;
+}
+

@@ -1,0 +1,16 @@
+.btn {
+    width: 15%;
+    min-width: 48px;
+    min-height: 48px;
+    color: var(--button-text-color);
+    border: 2px solid var(--container-border);
+    border-radius: 8px;
+    outline: none;
+    font-size: 12px;
+}
+
+.btn:hover, focus {
+    cursor: pointer;
+    filter: brightness(120%);
+    box-shadow: 2px 2px 4px var(--button-hover-color);
+}

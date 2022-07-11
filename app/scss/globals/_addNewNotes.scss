@@ -1,0 +1,46 @@
+
+.addNewNotes {
+    position: sticky;
+    top: 0;
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+
+    form{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    label {
+        position: absolute;
+        left: -1000px;
+    }
+
+    input[type="text"] {
+        width: 80%;
+        font-size: 1.25rem;
+        min-height: 48px;
+        border: 2px solid var(--container-border);
+        border-radius: 10px;
+        padding: 0.75rem;
+        outline: none;
+        margin-bottom: 0.75rem;
+    }
+
+    input[type="text"]:focus,
+    input[type="text"]:hover {
+        box-shadow: 2px 2px 4px var(--button-hover-color);
+    }
+
+     #addItems{
+        font-size: 1.25rem;
+        height: 100%;
+        background-color: var(--button-color);
+        padding: 0.75rem;
+        @media (min-width: 768px) {
+            font-size: 1.5rem;
+        }
+        
+    }
+}
+
+
